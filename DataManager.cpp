@@ -28,32 +28,6 @@ Field generateBlock(const std::string& str)
 
 bool isHitted(const BlockPosition& bp, const Field& f, const std::vector<Field>& blockDatas)
 {
-    // int i1 = b1.getIndex();
-    // Field f1 = blockDatas[i1];
-    // int i2 = b2.getIndex();
-    // Field f2 = blockDatas[i2];
-    // typedef std::pair<int, int> Point;
-    // std::set<Point> s;
-    // for (int r = 0; r < f1.getR(); r++)
-    //     for (int c = 0; c < f1.getC(); c++) {
-    //         if (f1[r][c]) {
-    //             Point p;
-    //             p.first = b1.getr() + r;
-    //             p.second = b1.getc() + c;
-    //             s.insert(p);
-    //         }
-    //     }
-    // for  (int r = 0; r < f2.getR(); r++)
-    //     for (int c = 0; c < f2.getC(); c++) {
-    //         if (f2[r][c]) {
-    //             Point p;
-    //             p.first = b2.getr() + r;
-    //             p.second = b2.getc() + c;
-    //             if (s.count(p))
-    //                 return true;
-    //         }
-    //     }
-    // return false;
     Field bf = blockDatas[bp.getIndex()];
     for (int r = 0; r < bf.getR(); r++)
     for (int c = 0; c < bf.getC(); c++)
