@@ -1,6 +1,6 @@
 # Blocks
-A blocks game written with C++.
+A simple Blocks game built with C++.
 ## Features
-C++, OOP;
-## Info
-The game is being written.
+ - C++
+ - OOP
+ - Model-Display
