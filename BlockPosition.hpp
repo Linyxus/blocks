@@ -1,6 +1,12 @@
 #ifndef BLOCK_POSITION_HPP__
 #define BLOCK_POSITION_HPP__
 
+/*
+    BlockPosition
+    A record of the position of the block.
+    Tip: It is not related to Field to which it belongs.
+*/
+
 class BlockPosition
 {
 public:
