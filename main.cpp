@@ -1,9 +1,8 @@
 #include <iostream>
 #include "DataManager.hpp"
-#include "Trigger.hpp"
 using namespace std;
 
-Manager man;
+Manager man();
 
 int main()
 {

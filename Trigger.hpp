@@ -9,10 +9,11 @@ public:
     ~Trigger();
     bool trigger(); //once the trigger function returned false, the loop will end.
     void setLast(int);
+    bool needTrigger(int) const;
 private:
     int interval; //ms
     Function onTrigger;
-    int last;
+    int last; //ms
 };
 
 #endif

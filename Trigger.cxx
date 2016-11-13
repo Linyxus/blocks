@@ -20,3 +20,11 @@ void Trigger::setLast(int now)
 {
     last = now;
 }
+
+bool Trigger::needTrigger(int now) const
+{
+    if (now - last >= interval)
+        return true;
+    else
+        return false;
+}
