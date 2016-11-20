@@ -1,4 +1,4 @@
-objects = main.cpp Field.cpp DataManager.cpp Trigger.cxx
+objects = main.cpp Field.cpp DataManager.cpp Trigger.cxx ConsoleDisplayer.cxx
 all: $(objects)
 	clang++ -g -ggdb $(objects) -o Block -std=c++11 -Wall
 clean:
