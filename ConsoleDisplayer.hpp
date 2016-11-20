@@ -2,6 +2,7 @@
 #define CONSOLE_DISPLAYER_HPP_
 
 #include "DataManager.hpp"
+#include <cstdlib>
 
 class Displayer
 {

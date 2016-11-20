@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-class Field
+class Field //Field[r][c]
 {
 public:
     typedef vector<int> DataRow;

@@ -18,7 +18,7 @@ public:
     bool update();
     void switchToNextBlock();
     void checkClearable();
-    const Field& getField() const { return field; }
+    Field getField() const;
 private:
     Field field;
     void readBlockFromStrs();

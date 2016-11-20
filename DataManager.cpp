@@ -120,3 +120,15 @@ bool Manager::update()
     }
     return true;
 }
+
+Field Manager::getField() const
+{
+    Field f = this->field;
+    BlockPosition b = this->currentBlock;
+    Field bf = this->blockDatas[b.getIndex()];
+    for (int r = 0; r < bf.getR(); r++)
+    for (int c = 0; c < bf.getC(); c++) {
+        f[r+b.getr()][c+b.getc()] = bf[r][c];
+    }
+    return f;
+}
